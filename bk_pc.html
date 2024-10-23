@@ -1,0 +1,276 @@
+{% extends 'default_frame.twig' %}
+{% block stylesheet %}
+<style type="text/css">
+    .c-itemList--col2.is-big .c-itemList__item {
+        width: 100%;
+    }
+
+    .c-itemList--col2.is-big .c-itemList__item .c-itemList__name {
+        font-size: 1.5rem !important;
+    }
+
+    .font-clr {
+        color: #DE0000;
+    }
+
+    .border {
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        background: linear-gradient(to bottom, transparent 60%, rgba(213, 176, 90, 0.5) 30%);
+    }
+
+    .gift_menulist a p {
+        display: block;
+        width: 100%;
+        padding: 0 1.5rem;
+        position: relative;
+    }
+
+    .gift_menulist p::after {
+        content: "";
+        width: .7rem;
+        height: .7rem;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        position: absolute;
+        top: 40%;
+        right: 1rem;
+        transform: rotate(45deg) translateY(-50%);
+        transition: all .3s ease;
+    }
+
+    .border_section {
+        border-bottom: 5px solid #E0C483;
+    }
+
+    .gift_menulist {
+        width: calc((100% - 1rem) / 4);
+        padding: 0 .5rem;
+        margin: 2rem 0;
+    }
+
+    .btn_bg--red {
+        background: #DE0000;
+        color: #fff;
+        box-shadow: 3px 3px 6px #ccc;
+    }
+
+    .g-fs10L {
+        font-size: 37px;
+    }
+
+    .cpn_btn {
+        background-color: #D5B05A;
+    }
+
+    .u-fos31 {
+        font-size: 31px;
+    }
+</style>
+
+{% endblock %}
+
+{% block main %}
+{{ render(path('block_content_bread_crumb')) }}
+
+<section class="supercpn">
+    <div>
+        <h1 class="c-title--L01 u-mT2">10/15(火)まで 2024秋婚！今年最大のPIARYプレミアムセール　厳選内祝いが最大50％OFF</h1>
+        <div class="js-cpn_saleTxt dp-bannerLink__txt dp-bannerLink__txt--Gcolor u-txtC"></div>
+        <div>
+            <img src="//image.piary.jp/uploads/gift/special/cpn_sale/mv_pc.webp" class="u-mWA u-w100" alt="超メガ得mv">
+        </div>
+        <div class="supercpn__main u-mT6">
+            <div>
+                <h2 class="u-fs5L u-bold u-txtC font-clr u-pB25">内祝いカード<br><span class="border">”ブランシュ”</span>リリース記念！</h2>
+                <p class="u-fs2L u-txtC u-pB2">今人気の内祝いギフトが<br><span class="font-clr border u-fs5L">10月15日(火)まで</span></p>
+                <p class="u-fs5L u-bold u-txtC font-clr u-pB2">お得に準備できる！</p>
+                <p class="u-fs2L u-txtC">新登場した内祝いカード”ブランシュ”や不動の人気ギフトなど</p>
+                <p class="u-fs5L u-txtC"><span class="font-clr u-bold">絶対に喜ばれるマストバイギフト<span class="u-fs2L">を</span></span><br><span class="u-fs2L">この機会に贈りませんか？</span></p>
+                <a href="#itemlist" class="c-buttonM c-button--down u-w30 u-mWA u-clr--white01 u-bold u-borA2 u-borClr--white01 cpn_btn u-mT4">セール商品一覧を見る</a>
+                <!-- <img src="//image.piary.jp/uploads/gift/special/cpn_sale/PC-02.webp" class="u-mB4 u-mWA u-mTB10" alt="ギフト一覧"> -->
+            </div>
+            <section class="u-mT5">
+                <figure class="blanche_feature__imgWrap">
+                    <img src="//image.piary.jp/uploads/gift/special/cpn_sale/img_blanche_pc.webp" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/img_blanche_pc.webp" alt="" class="u-mWA u-w70">
+                </figure>
+                <div class="cpn_blanche__content u-pT5 u-w70 u-mWA">
+                    <section class="u-w60 u-mWA">
+                        <h3 class="cpn_blanche__ttl u-txtC u-pTB1 u-clr--white01 u-fs3L u-bold--only u-family1 u-w70 u-mWA">内祝いカード ブランシュとは</h3>
+                        <p class="u-fosL u-bold u-txtC u-mT4">
+                            今までは新郎新婦さまが選んでいた内祝いギフト。<br>
+                            内祝いカードでは、<span class="cpn_blanche__contentLine">お返しを贈る相手がカードの</span><br>
+                            <span class="cpn_blanche__contentLine">QRコードから欲しいギフトを選べます！</span>
+                        </p>
+                        <figure class="u-mT3"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/catalog/catalog_almighty/catalog_blanche/feature01.webp" alt="内祝いの準備がラク 2品・3品が選べる"></figure>
+                        <p class="u-fosL u-bold u-txtC u-mT3">
+                            新郎新婦さまは<span class="cpn_blanche__contentLine">お返し贈る相手に合わせて</span><br>
+                            <span class="cpn_blanche__contentLine">内祝いカードの価格を選ぶだけ！</span><br>
+                            2品、3品のボリューム満点のお返しが叶います！
+                        </p>
+                        <figure class="u-mT9 cpn_blanche__contDown u-posRel"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/catalog/catalog_almighty/catalog_blanche/feature02.webp" alt="カードを受け取ったお相手がQRコードから欲しいギフトが選べる"></figure>
+                        <p class="u-fosL u-bold u-txtC u-mT3">
+                            内祝いカードを貰った方は、裏面のQRコードから<br>
+                            <span class="cpn_blanche__contentLine">自分で欲しいギフトを選べます！</span>
+                        </p>
+                    </section>
+
+                    <section class="u-mT8 u-w60 u-mWA">
+                        <h3 class="cpn_blanche__ttl u-txtC u-pTB1 u-clr--white01 u-fs3L u-bold--only u-family1 u-w70 u-mWA">おすすめの内祝いカード</h3>
+                        <p class="u-fos3L u-bold u-txtC u-mT4"><span class="cpn_blanche__contentLine">10,000円のお祝い返しにおすすめ！</span></p>
+                        <div>
+                            <section class="cpn_blanche_item--2set u-mT5">
+                                <h4 class="u-txtC u-family1 u-fs8L u-bold--only">4,800円コース</h4>
+                                <p class="u-txtC cpn_blanche_itemCont">
+                                    <span class="u-fosL u-family1 u-clr--white01 u-bold--only cpn_blanche_itemNum">2品</span>
+                                    <span>記念品3,000円　引き菓子or縁起物1,000円<br>システム料800円</span>
+                                </p>
+                                {{ render(path('block_product_list', { code:'gwfc201,gwfc205,gwfc209', class_name:'cpn_blanche_itemList'})) }}
+                            </section>
+                            <section class="cpn_blanche_item--3set u-mT5">
+                                <h4 class="u-txtC u-family1 u-fs8L u-bold--only">5,800円コース</h4>
+                                <p class="u-txtC cpn_blanche_itemCont">
+                                    <span class="u-fosL u-family1 u-clr--white01 u-bold--only cpn_blanche_itemNum">3品</span>
+                                    <span>記念品3,000円　引き菓子1,000円<br>縁起物1,000円　システム料800円</span>
+                                </p>
+                                {{ render(path('block_product_list', { code:'gwfc301,gwfc305,gwfc309', class_name:'cpn_blanche_itemList'})) }}
+                            </section>
+                            <p class="u-fos3L u-bold u-txtC u-mT4"><span class="border">30,000円のお祝い返しにおすすめ！</span></p>
+                            <section class="cpn_blanche_item--3set u-mT5">
+                                <h4 class="u-txtC u-family1 u-fs8L u-bold--only">12,800円コース</h4>
+                                <p class="u-txtC cpn_blanche_itemCont">
+                                    <span class="u-fosL u-family1 u-clr--white01 u-bold--only cpn_blanche_itemNum">3品</span>
+                                    <span>記念品10,000円　引き菓子1,000円<br>縁起物1,000円　システム料800円</span>
+                                </p>
+                                {{ render(path('block_product_list', { code:'gwfc304,gwfc308,gwfc312', class_name:'cpn_blanche_itemList'})) }}
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="u-mT8" id="itemlist">
+                <h2 class="u-lineHS u-bold u-txtC font-clr border_section u-pB15 u-fos3L">絶対に喜ばれる<br><span class="u-fos31">マストバイギフト</span></h2>
+                <ul class="u-flxCnt u-w70 u-mWA u-mT9">
+                    <li class="gift_menulist u-posRel cpn_new-icon__btn">
+                        <a href="#gift_card">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/gift_card.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">内祝いカード</p>
+                        </a>
+                    </li>
+                    <li class="gift_menulist">
+                        <a href="#gift_set">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/gift_set.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">内祝いギフトセット</p>
+                        </a>
+                    </li>
+                    <li class="gift_menulist">
+                        <a href="#catalog">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/cataloggift.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">カタログギフト</p>
+                        </a>
+                    </li>
+                    <li class="gift_menulist">
+                        <a href="#sweetsgift">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/sweetsgift.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">人気のスイーツギフト</p>
+                        </a>
+                    </li>
+                    <li class="gift_menulist">
+                        <a href="#autumn_gourmet">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/autumn_gourmet.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">秋のグルメギフト</p>
+                        </a>
+                    </li>
+                    <li class="gift_menulist">
+                        <a href="#towel_goods">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/towel_goods.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">タオル＆雑貨ギフト</p>
+                        </a>
+                    </li>
+                    <li class="gift_menulist">
+                        <a href="#baby_gift">
+                            <img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/baby_gift.webp" alt="" class="u-w100 u-mWA">
+                            <p class="u-fsM u-txtC">出産内祝いギフト</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <div class="u-mT11 u-mB9" id="gift_card">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05 cpn_new-icon__ttl"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_giftcard.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'code':'gwfc301,gwfc302,gwfc303,gwfc304,gwfc305,gwfc306,gwfc307,gwfc308,gwfc309,gwfc310,gwfc311,gwfc312,gwfc201,gwfc202,gwfc203,gwfc204,gwfc205,gwfc206,gwfc207,gwfc208,gwfc209,gwfc210,gwfc211,gwfc212', 'class_name':'goodRvw__itemWrap__scroll u-mB1 c-itemList--col5'})) }}
+                </div>
+                <a href="/catalog/catalog_almighty/catalog_blanche/" class="c-buttonM c-button--right u-w30 u-mWA u-clr--white01 u-bold u-borA2 u-borClr--white01 cpn_btn u-mT4">内祝いカードの詳細はこちら</a>
+            </div>
+            <div class="u-mT11 u-mB9" id="gift_set">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_giftset.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'code':'ysu349,ysu352,ysu355,ysu387,ysu388,ysu389,ysu390,ysu516,ysu517,ysu518,ysu519,ysu538,ysu539,ysu540,ysu541,ysu971,ysu1006,ysu1328,ysu1329,ysu1330,ysu1339,ysu1399,ysu1450,ysu1451,ysu1452,ysu1453,ysu1454,ysu1455,ysu1456,ysu1515,ysu1560,ysu1616,ysu1619,ysu1797', 'class_name':'goodRvw__itemWrap__scroll u-mB1 c-itemList--col5'})) }}
+                </div>
+
+            </div>
+
+            <div class="u-mTB9" id="catalog">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_catalog.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'path':'catalog', 'code':'cg01,cg02,cg03,cg04,cg05,cg06,cg07,cg08,cg09,cg10,cg67,cg68,cg69,ls081,ls082,ls083,ls084,ls085,ls086,ls087,ls088,ls089,ls090,ls091,ls092,ls093,gn001,gn002,gn003,gn004,gn005,gn006,gn007,gn008,gn009,gn010,gn011,gn012,otg001,otg002,otg003,otg004,mbgn001,mbgn002,mbgn003,mbgn004,mbgn005,mbgn006,mbgn007,mbgn008,mbgn009,mbgn010,mbgn011,mbgn012,mbcg01,mbcg02,mbcg03,mbcg04,mbcg05,mbcg06,mbcg07,mbcg08,mbcg09,mbcg10,mbcg67,mbcg68,mbcg69', 'class_name':'goodRvw__itemWrap__scroll u-mB1 c-itemList--col5'})) }}
+                </div>
+
+            </div>
+
+            <div class="u-mTB9" id="sweetsgift">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_sweets.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'code':'ot0181,ybk0003,ybk0016,gdv0049s,mgs0033,adg0378,adg0383,adg0388,gdv0068s,gaj2231,ot0548,ot0559,ot0580,skg007,ddc001,ddc002,ddc003,ddc004,ddc007', 'class_name':'goodRvw__itemWrap__scroll u-mB1 c-itemList--col5'})) }}
+                </div>
+            </div>
+
+            <div class="u-mTB9" id="autumn_gourmet">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_gourmet.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'code':'ot0215,ot0460,ot0463,nk007,nk008,nk009,nk020,nk021', 'class_name':'goodRvw__itemWrap__scroll u-mB1 c-itemList--col5'})) }}
+                </div>
+            </div>
+
+            <div class="u-mT9" id="towel_goods">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_towel.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'code':'tkd0358,pfh0045,pfh0051,pfh0052,pfh0054', 'class_name':'goodRvw__itemWrap__scroll c-itemList--col5'})) }}
+                </div>
+            </div>
+
+            <div class="u-mT9" id="baby_gift">
+                <div class="u-mTB5">
+                    <h3 class="u-fos3L u-txtC u-bold u-mTB05"><img src="/html/template/commons/assets/img/common/loading.gif" data-src="//image.piary.jp/uploads/gift/special/cpn_sale/section_ttl_babygift.webp" alt="" class="u-w100 u-mWA"></h3>
+                </div>
+
+                <div class="u-pW6">
+                    {{ render(path('block_product_list', {'code':'tkd0253a,tkd0258a,skg004,skg005,skg006', 'class_name':'goodRvw__itemWrap__scroll c-itemList--col5'})) }}
+                </div>
+            </div>
+
+            <div class="u-w50 u-mWA u-mTB6">
+                <a href="/special/cpn_sale/" class="u-blk u-mWA c-buttonL c-button--white01 c-button--right btn_bg--red">
+                    <p class="u-bold u-txtC u-fs2L">PIARYプレミアムセールTOPへ</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
