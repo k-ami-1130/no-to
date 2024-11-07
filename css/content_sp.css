@@ -455,7 +455,7 @@
         content: url('../images/instagram.svg');
         transform: scale(0.7) translateX(-50%);
         position: absolute;
-        top: -30%;
+        top: -5%;
         left: 48%;
     }
 
@@ -917,5 +917,14 @@
         flex-wrap: wrap !important;
         -webkit-justify-content: space-between !important;
         justify-content: space-between !important;
+    }
+    .slider_item{
+        padding-left: 10px;
+    }
+    .insta_item{
+        width: calc((100% - 10px) / 2);
+    }
+    .insta_item:nth-of-type(n+3){
+        margin-top: 5px;
     }
 }
