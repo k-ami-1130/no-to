@@ -466,8 +466,8 @@
         content: url('../images/instagram.svg');
         transform: scale(0.7) translateX(-50%);
         position: absolute;
-        top: -30%;
-        left: 48%;
+        top: -6%;
+        left: 50%;
     }
 
     .cate_photogallery__warp{
@@ -966,5 +966,13 @@
         padding-left: 10px;
         height: 4%!important;
         width: 4%!important;
+    }
+
+    .insta_item{
+        width: calc((100% - 30px) / 3);
+    }
+
+    .insta_item:nth-of-type(n+4){
+        margin-top: 10px;
     }
 }
