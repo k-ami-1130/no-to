@@ -48,6 +48,22 @@
                 10年、20年後も色褪せない写真を<br class="u-br--sp">
                 私たちと共に残しませんか。
             </p>
+            <div class="js-slider_ver01 slider_wrap u-mT8-5">
+                <img src="images/slider01.jpg" alt="" class="slider_item">
+                <img src="images/slider02.jpg" alt="" class="slider_item">
+                <img src="images/slider03.jpg" alt="" class="slider_item">
+                <img src="images/slider04.jpg" alt="" class="slider_item">
+                <img src="images/slider05.jpg" alt="" class="slider_item">
+                <img src="images/slider06.jpg" alt="" class="slider_item">
+            </div>
+            <div class="js-slider_ver02 slider_wrap" dir="rtl">
+                <img src="images/slider07.jpg" alt="" class="slider_item">
+                <img src="images/slider08.jpg" alt="" class="slider_item">
+                <img src="images/slider09jpg" alt="" class="slider_item">
+                <img src="images/slider10.jpg" alt="" class="slider_item">
+                <img src="images/slider11.jpg" alt="" class="slider_item">
+                <img src="images/slider12.jpg" alt="" class="slider_item">
+            </div>
             <div class="top_bgimg"></div>
             <figure class="u-w30-60 u-mWA u-mT5"><img src="images/no-to_logo.svg" alt=""></figure>
             <section class="u-mT8">
@@ -81,13 +97,17 @@
                         <img src="images/top_shitigosan.jpg" alt="" class="u-w100">
                         Shichi-Go-San<br>七五三
                     </a>
+                    <a href="seniorphoto.html" class="plan_items__item" target="_blank">
+                        <img src="images/top_senior.jpg" alt="" class="u-w100">
+                        senior<br>シニア
+                    </a>
                     <a href="profilephoto.html" class="plan_items__item" target="_blank">
                         <img src="images/top_profile.jpg" alt="" class="u-w100">
                         Profile<br>プロフィール/<br>婚活/お見合い
                     </a>
                     <a href="eventphoto.html" class="plan_items__item" target="_blank">
                         <img src="images/top_event.jpg" alt="" class="u-w100">
-                        Event<br>各種イベント
+                        Event・others<br>イベント・その他
                     </a>
                 </div>
             </section>
@@ -167,11 +187,39 @@
 
     <!-- jQueryをCDNから読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
+
+            $('.js-slider_ver01').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 5000,
+                cssEase: "linear",
+                slidesToShow: 3,
+                swipe: false,
+                arrows: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                infinite: true
+            })
+
+            $('.js-slider_ver02').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 5000,
+                cssEase: "linear",
+                slidesToShow: 3,
+                swipe: false,
+                arrows: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                rtl: true,
+                infinite: true
+            })
         });
     </script>
 </body>
