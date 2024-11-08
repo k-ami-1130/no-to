@@ -58,7 +58,7 @@
                     <div class="plan_wrap u-w90 u-mWA">
                         <div class="rocation_wrap">
                             <figure><img src="images/shutter.svg" alt=""></figure>
-                            <p class="u-fosS u-txtC">撮影（50カット）</p>
+                            <p class="u-fosS u-txtC">撮影（10カット）</p>
                         </div>
                         <div class="rocation_wrap">
                             <figure><img src="images/dvd.svg" alt=""></figure>
@@ -198,6 +198,18 @@
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
+
+            $('a[href^="#"]').click(function () {
+                var speed = 500; // スクロール速度(ミリ秒)
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href); // 対象の要素
+                var position = target.offset().top; // スクロール位置
+
+                // 'html' と 'body' にスクロールを適用
+                $('html, body').animate({ scrollTop: position }, speed, 'swing');
+
+                return false; // デフォルトの動作を無効化
+            });
         });
     </script>
 </body>

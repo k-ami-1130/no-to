@@ -60,7 +60,7 @@
                         fee</span><br><span class="u-fosM u-boldN">撮影料金</span></h2>
                 <section class="location u-w90 u-mWA u-mT5">
                     <h3 class="rocation_ttl"><span class="u-family1">Location plan</span><br><span
-                            class="u-fosS u-boldN">ロケーションプラン</span></h3>
+                              class="u-fosS u-boldN">ロケーションプラン</span></h3>
                     <p class="location_basefee">基本料金</p>
                     <p class="u-fosL u-bold u-txtC u-mT2">￥55,000<span class="u-fosS">（税込）</span></p>
                     <p class="location_attention">
@@ -69,7 +69,7 @@
                         ※出張料金は一部の近隣エリアのみ無料とさせていただいております。
                     </p>
                 </section>
-                <p class="u-fosS u-w90 u-mWA u-mT2 u-bold">提携しているドレスショップへのご案内も可能です。<br>お気軽にお問い合わせください。</p>
+                <p class="u-fosS u-w90 u-mWA u-mT2 u-bold u-lineH2L u-txtC-L">提携しているドレスショップへのご案内も可能です。<br>お気軽にお問い合わせください。</p>
             </section>
             <section class="u-mT6">
                 <h2 class="u-fos2L u-txtC u-bold u-ls5 u-lineHM index_ttl"><span class="u-family1">fee by area</span><br><span class="u-fosS u-boldN">エリア別出張料金</span></h2>
@@ -173,6 +173,18 @@
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
+
+            $('a[href^="#"]').click(function () {
+                var speed = 500; // スクロール速度(ミリ秒)
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href); // 対象の要素
+                var position = target.offset().top; // スクロール位置
+
+                // 'html' と 'body' にスクロールを適用
+                $('html, body').animate({ scrollTop: position }, speed, 'swing');
+
+                return false; // デフォルトの動作を無効化
+            });
         });
     </script>
 </body>
