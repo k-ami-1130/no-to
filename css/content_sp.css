@@ -913,13 +913,4 @@
         -webkit-justify-content: space-between !important;
         justify-content: space-between !important;
     }
-    .slider_item{
-        padding-left: 10px;
-    }
-    .insta_item{
-        width: calc((100% - 10px) / 3);
-    }
-    .insta_item:nth-of-type(n+4){
-        margin-top: 5px;
-    }
 }
