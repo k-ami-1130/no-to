@@ -167,6 +167,10 @@
         padding-top: 200px;
     }
 
+    .u-pT24{
+        padding-top: 240px;
+    }
+
     .u-pT40{
         padding-top: 400px;
     }
@@ -342,12 +346,9 @@
         text-align: center;
     }
 
-    .top_img {
-        background-image: url('../images/top_mv.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 348px;
+    .top_mv_ttl{
+        position: relative;
+        z-index: 99;
     }
 
     .top_bgimg {
@@ -955,14 +956,22 @@
         transform: rotate(-45deg);
     }
 
-    .plan_wrap,
-    .location_plan_wrap{
+    .plan_wrap{
         display: -webkit-flex !important;
         display: flex !important;
         -webkit-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
         -webkit-justify-content: center !important;
         justify-content: center !important;
+    }
+
+    .location_plan_wrap{
+        display: -webkit-flex !important;
+        display: flex !important;
+        -webkit-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        -webkit-justify-content: space-between !important;
+        justify-content: space-between !important;
     }
     
     .slider_wrap{
@@ -991,9 +1000,6 @@
         &:nth-of-type(2n){
           transition-delay: 0.4s;
         }
-        &:nth-of-type(n+3){
-          margin-top:4%;
-        }
       }
     }
 
@@ -1013,4 +1019,54 @@
           opacity: 1;
       }
     }
+
+    /*写真が変わるアニメーション*/
+
+.top_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-fill-mode: both !important;
+}
+
+.top_img.js-01 {
+    z-index: 1;
+    animation: top_img 15s linear 0s infinite normal;
+}
+
+.top_img.js-02 {
+    z-index: 2;
+    animation: top_img 15s linear 3s infinite normal;
+}
+
+.top_img.js-03 {
+    z-index: 3;
+    animation: top_img 15s linear 6s infinite normal;
+}
+
+.top_img.js-04 {
+    z-index: 4;
+    animation: top_img 15s linear 9s infinite normal;
+}
+
+.top_img.js-05 {
+    z-index: 5;
+    animation: top_img 15s linear 12s infinite normal;
+}
+
+@keyframes top_img {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
 }
