@@ -984,27 +984,22 @@
 
     .top_img.js-01 {
         z-index: 1;
-        animation: top_img 15s linear 0s infinite normal;
+        animation: top_img 12s linear 0s infinite normal;
     }
 
     .top_img.js-02 {
         z-index: 2;
-        animation: top_img 15s linear 3s infinite normal;
+        animation: top_img 12s linear 3s infinite normal;
     }
 
     .top_img.js-03 {
         z-index: 3;
-        animation: top_img 15s linear 6s infinite normal;
+        animation: top_img 12s linear 6s infinite normal;
     }
 
     .top_img.js-04 {
         z-index: 4;
-        animation: top_img 15s linear 9s infinite normal;
-    }
-
-    .top_img.js-05 {
-        z-index: 5;
-        animation: top_img 15s linear 12s infinite normal;
+        animation: top_img 12s linear 9s infinite normal;
     }
 
     @keyframes top_img {
