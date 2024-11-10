@@ -69,6 +69,9 @@
     }
 
     /* margin */
+    .u-mT0{
+        margin-top: 0!important;
+    }
     .u-mT15 {
         margin-top: 15px;
     }
@@ -231,7 +234,7 @@
     .u-w70,
     .u-w70-90,
     .u-w70-100{
-        width: 70%;
+        width: 70%!important;
     }
 
     .u-w75 {
@@ -374,7 +377,7 @@
 
     .top_bgimg.album_made__bgimg {
         top: 20%;
-        right: 12%;
+        right: 0%;
     }
 
     .top_mv_wrap{
