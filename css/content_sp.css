@@ -436,7 +436,7 @@
 
     .top_goodsAlb__wrap {
         background-image: url('../images/top_goodsAlb.jpg');
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
