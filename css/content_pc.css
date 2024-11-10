@@ -465,15 +465,6 @@
         height: 642px;
     }
 
-    .goodsAlb__wrap {
-        background-image: url('../images/goodsAlb_pc.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%!important;
-        height: 642px;
-    }
-
     .top_goodsAlb__ttl{
         padding-top: 300px;
     }
