@@ -216,7 +216,7 @@
 
     .u-w50-80,
     .u-w50-100 {
-        width: 50%;
+        width: 50%!important;
     }
 
     .u-w60,
