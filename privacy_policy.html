@@ -4,213 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/content_pc.css">
     <link rel="stylesheet" href="css/content_sp.css">
-    <title>form</title>
+    <link rel="stylesheet" href="css/content_pc.css">
+    <title>Privacy policy</title>
 </head>
 
 
 <body>
     <div id="header"></div>
-    <section class="u-mT5">
-        <h1 class="index_ttl u-bold u-lineHS u-txtC"><span class="u-family1">Contact</span><br><span
-                  class="u-fosM u-boldN">お問い合わせ</span></h1>
-        <p class="contact_cont u-mT3 u-lineHL u-fosM u-w75 u-mWA">
-            当店へのご相談・ご質問等ありましたらお気軽にお問い合わせください。<br>
-            電話やメールにてお問い合わせを承っております。メールでのお問い合わせはお返事までにお時間をいただく場合がございます。お急ぎの場合はお電話にて直接お問い合わせください。
-        </p>
-        <table class="contact_question u-w80 u-mWA u-txtL u-fosM u-mT3">
-            <tr>
-                <th>営業時間</th>
-                <td>10:00-17:00</td>
-            </tr>
-            <tr>
-                <th>定休日</th>
-                <td>火曜日</td>
-            </tr>
-            <tr>
-                <th>TEL / FAX</th>
-                <td>052-990-3221</td>
-            </tr>
-        </table>
-        <section>
-            <h2 class="form_ttl">お問い合わせフォーム</h2>
-
-            <form method="POST" data-netlify="true" class="u-mT4 u-w80-90 u-mWA" name="contact" action="/success.html">
-                <input type="hidden" name="contact" value="contact" />
-                <div class="u-mT2">
-                    <label for="name" class="u-fosM u-bold u-ls2">お名前<span class="form_clr">※</span></label><br>
-                    <div class="u-flxBet">
-                        <input type="text" id="name_sei" name="name_sei" value="" placeholder="姓" required
-                               class="u-pTB1">
-                        <input type="text" id="name_mei" name="name_mei" value="" placeholder="名" required
-                               class="u-pTB1">
-                    </div>
-                </div>
-
-                <div class="u-mT2">
-                    <label for="name" class="u-fosM u-bold u-ls2">フリガナ<span class="form_clr">※</span></label><br>
-                    <div class="u-flxBet">
-                        <input type="text" id="furigana_sei" name="furigana_sei" value="" placeholder="セイ" required
-                               class="u-pTB1">
-                        <input type="text" id="furigana_mei" name="furigana_mei" value="" placeholder="メイ" required
-                               class="u-pTB1">
-                    </div>
-                </div>
-
-                <div class="u-mT2">
-                    <label for="email" class="u-fosM u-bold u-ls2">メールアドレス<span class="form_clr">※</span></label><br>
-                    <input type="email" id="email" name="email" class="u-w100" placeholder="メールアドレス" required>
-                </div>
-
-                <div class="u-mT2">
-                    <label for="tel" class="u-fosM u-bold u-ls2">電話番号<span class="form_clr">※</span><span
-                              class="u-fosS form_clr">ハイフンを入れてご入力ください。</span></label><br>
-                    <textarea id="tel" name="tel" placeholder="090-1234-5678" required></textarea>
-                </div>
-
-                <div class="u-mT2">
-                    <label for="postcode" class="u-fosM u-bold u-ls2">郵便番号<span class="form_clr">※</span><span
-                              class="u-fosS form_clr">ハイフンを入れてご入力ください。</span></label><br>
-                    <textarea id="postcode" name="postcode" placeholder="123-4567" required></textarea>
-                </div>
-
-                <div class="u-mT2">
-                    <label for="address" class="u-fosM u-bold u-ls2">ご住所</label><br>
-                    <textarea id="address" name="address" placeholder="住所"></textarea>
-                </div>
-
-                <div class="u-mT6 u-lineH2S">
-                    <p class="u-fosL u-bold u-mB2">お問い合わせ項目<span class="form_clr">※</span></p>
-                    <label for="event1" class="u-fosM u-flxMid" class="radio_wtap u-mT15">
-                        <input type="radio" id="event1" name="event" value="前撮り" required>
-                        <span class="custom_radioBtn"></span>
-                        前撮り
-                    </label><br>
-                    <label for="event2" class="u-fosM u-flxMid" class="radio_wtap u-mT15">
-                        <input type="radio" id="event2" name="event" value="撮影について">
-                        <span class="custom_radioBtn"></span>
-                        撮影について
-                    </label><br>
-                    <label for="event3" class="u-fosM u-flxMid" class="radio_wtap u-mT15">
-                        <input type="radio" id="event3" name="event" value="オプションについて">
-                        <span class="custom_radioBtn"></span>
-                        オプションについて
-                    </label><br>
-                    <label for="event4" class="u-fosM u-flxMid" class="radio_wtap u-mT15">
-                        <input type="radio" id="event4" name="event" value="グッズ・アルバム作成について">
-                        <span class="custom_radioBtn"></span>
-                        グッズ・アルバム作成について
-                    </label><br>
-                    <label for="event5" class="u-fosM u-flxMid" class="radio_wtap u-mT15">
-                        <input type="radio" id="event5" name="event" value="その他お問い合わせ">
-                        <span class="custom_radioBtn"></span>
-                        その他お問い合わせ
-                    </label>
-                </div>
-
-                <div class="u-mT5 u-lineH2S">
-                    <p class="u-fosL u-bold u-mB2">撮影の目的</p>
-                    <label for="purpose1" class="u-fosM u-flxMid" class="radio_wrap">
-                        <input type="radio" id="purpose1" name="purpose" value="撮影イベント参加" required>
-                        <span class="custom_radioBtn"></span>
-                        撮影イベント参加申し込み
-                    </label><br>
-                    <label for="purpose2" class="u-fosM u-flxMid" class="radio_wrap">
-                        <input type="radio" id="purpose2" name="purpose" value="成人式">
-                        <span class="custom_radioBtn"></span>
-                        成人式
-                    </label><br>
-                    <label for="purpose3" class="u-fosM u-flxMid" class="radio_wrap">
-                        <input type="radio" id="purpose3" name="purpose" value="ファミリー">
-                        <span class="custom_radioBtn"></span>
-                        ファミリー
-                    </label><br>
-                    <label for="purpose4" class="u-fosM u-flxMid" class="radio_wrap">
-                        <input type="radio" id="purpose4" name="purpose" value="その他（お問い合わせ内容欄にご入力ください）">
-                        <span class="custom_radioBtn"></span>
-                        その他（お問い合わせ内容欄にご入力ください）
-                    </label>
-                </div>
-
-                <div class="u-mT5">
-                    <label for="photospot" class="u-fosM u-bold">希望撮影場所</label>
-                    <textarea id="photospot" name="photospot" placeholder="住所" required></textarea>
-                </div>
-
-
-                <div class="u-mT2">
-                    <p class="u-fosM u-bold">撮影希望時期</p>
-                    <select id="year" name="year" required>
-                        <option value="年" disabled selected>年</option>
-
-                    </select>
-                    <select id="month" name="month" required>
-                        <option value="月" disabled selected>月</option>
-
-                    </select>
-                    <select id="day" name="day" required>
-                        <option value="日" disabled selected>日</option>
-                    </select>
-                </div>
-                <!-- <div class="u-mT2">
-                    <p class="u-fosM u-bold">撮影希望時期</p>
-                    <select id="year" name="year">
-                        <option value="" disabled selected>年</option>
-                    </select>
-                    <select id="month" name="month">
-                        <option value="" disabled selected>月</option>
-                    </select>
-                    <select id="day" name="day">
-                        <option value="" disabled selected>日</option>
-                    </select>
-                </div> -->
-
-                <div class="u-mT4">
-                    <label for="question" class="u-fosL u-bold">お問い合わせ</label>
-                    <textarea id="question" name="question"></textarea>
-                </div>
-                <button type="submit" class="contact_mail">送信する</button>
-            </form>
-
-
-            <p class="u-mT3 u-fosM u-w80 u-mWA">当サービスの<a href="/privacy_policy.html/" class="form_clr u-underline" target="_blank">プライバシーポリシー</a>にご同意の上、送信してください。</p>
-            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=793zxnbw" class="u-blk u-w40-80 u-mWA u-mT3"><img src="images/line.png" alt="" class="u-w100"></a>
+    <section class="plivacy_wrap">
+        <h1 class="u-fos3L u-txtC u-bold u-ls5 index_ttl u-w90 u-mWA"><span class="u-family1">Privacy policy</span><br><span class="u-fosM u-boldN">プライバシーポリシー</span></h1>
+        <p>no-to eternal photos（以下「当社」といいます）は、お客様の個人情報の保護を重要事項と捉え、これを尊重し適切な保護を行う為に下記のプライバシーポリシーを定め業務に当たっています。</p>
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第1条（個人情報の定義）</h2>
+            <p class="u-fosM u-lineHL">個人情報とは、個人に関する情報であり、お名前・生年月日・性別・電話番号・電子メールアドレスなど、特定の個人を識別し得る情報をいいます。</p>
         </section>
-        <div id="footer"></div>
-
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第2条（個人情報の収集・利用）</h2>
+            <p class="u-fosM u-lineHL">当社では、お客様より提供を受けた個人情報については、厳正な管理の下に保管し、当社の管理業務においてのみ利用いたします。お客様の許可があった場合、またはこちらが必要と判断した場合はこの限りではありません。</p>
+        </section>
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第3条（個人情報の第三者提供）</h2>
+            <p class="u-fosM u-lineHL">当社は、法令に基づく場合等正当な理由によらない限り、事前に本人の同意を得ることなく、個人情報を第三者に開示・提供することはありません。</p>
+        </section>
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第4条（委託先の監督）</h2>
+            <p class="u-fosM u-lineHL">当社は、お客様へ商品やサービスを提供する等の業務遂行上、個人情報の一部を外部の委託先へ提供する場合があります。その場合、業務委託先が適切に個人情報を取り扱うように管理いたします。</p>
+        </section>
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第5条（個人情報の管理）</h2>
+            <p class="u-fosM u-lineHL">当社は、個人情報の漏洩、滅失、毀損等を防止するために、個人情報保護管理責任者を設置し、十分な安全保護に努め、また、個人情報を正確に、また最新なものに保つよう、お預かりした個人情報の適切な管理を行います。</p>
+        </section>
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第6条（情報内容の照会、修正または削除）</h2>
+            <p class="u-fosM u-lineHL">当社は、お客様が当社にご提供いただいた個人情報の照会、修正または削除を希望される場合は、ご本人であることを確認させていただいたうえで、合理的な範囲ですみやかに対応させていただきます。</p>
+        </section>
+        <section class="u-mT5">
+            <h2 class="privacy_ttl">第7条（個人情報についてのお問い合わせ先）</h2>
+            <p class="u-fosM u-lineHL">お客様の個人情報に関するお問い合わせにつきましては、下記窓口で受付けております。</p>
+        </section>
+        <p class="u-fosM u-lineHL u-mT4">
+            ≪個人情報保護に関するお問い合わせ先≫<br>
+            開示等のご請求等またはご意見・ご要望のお申し出につきましては、下記の窓口までお申し出ください。
+        </p>
+        <p class="privacy_adress u-fosM u-lineHL u-mT2">
+            no-to eternal photos<br>
+            住所：愛知県名古屋市瑞穂区佐渡町1-5 3階<br>
+            電話番号：052-990-3221
+        </p>
+        <a href="https://line.me/R/ti/p/@793zxnbw?from=page&accountId=793zxnbw" class="u-blk u-w50-100 u-mWA u-mT5"><img src="images/line.png" alt="" class="u-w100"></a>
     </section>
+    <div id="footer"></div>
+
+    <!-- jQueryをCDNから読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const yearSelect = document.getElementById('year');
-            const monthSelect = document.getElementById('month');
-            const daySelect = document.getElementById('day');
-
-            // 年の選択肢を追加
-            for (let year = 2024; year <= 2100; year++) {
-                const option = document.createElement('option');
-                option.value = year;
-                option.textContent = `${year}年`;
-                yearSelect.appendChild(option);
-            }
-
-            // 月の選択肢を追加
-            for (let month = 1; month <= 12; month++) {
-                const option = document.createElement('option');
-                option.value = month;
-                option.textContent = `${month}月`;
-                monthSelect.appendChild(option);
-            }
-
-            // 日の選択肢を追加
-            for (let day = 1; day <= 31; day++) {
-                const option = document.createElement('option');
-                option.value = day;
-                option.textContent = `${day}日`;
-                daySelect.appendChild(option);
-            }
-        });
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
