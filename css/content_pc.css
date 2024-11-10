@@ -1034,7 +1034,7 @@
 
 .top_img {
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 0;
     opacity: 0;
     animation-fill-mode: both !important;
