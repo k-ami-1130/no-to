@@ -484,7 +484,8 @@
         width: calc((100% - 1px) / 2);
     }
 
-    .rocation_wrap figure{
+    .rocation_wrap figure,
+    .plan_wrap figure{
         display: flex;
         justify-content: center;
     }
