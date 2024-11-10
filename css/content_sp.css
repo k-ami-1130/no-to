@@ -379,6 +379,9 @@
     .plan_items .plan_items__item {
         width: calc((100% - 15px) / 2);
         font-weight: bold;
+    }
+
+    .plan_items .plan_items__img{
         filter: drop-shadow(3px 3px 4px #aaa);
     }
 
@@ -430,7 +433,7 @@
     }
 
     .index_ttl::after {
-        content: url(../images/wave_sp.svg);
+        content: url(../images/wave.svg);
         position: absolute;
         display: contents;
         color: #FFBEAF;
