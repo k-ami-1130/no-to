@@ -507,6 +507,12 @@
         width: calc((100% - 1px) / 4);
     }
 
+    .rocation_wrap figure,
+    .plan_wrap figure{
+        display: flex;
+        justify-content: center;
+    }
+
     .rocation_ttl {
         color: #fff;
         font-size: 16px;
