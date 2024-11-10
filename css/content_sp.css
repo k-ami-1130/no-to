@@ -484,6 +484,11 @@
         width: calc((100% - 1px) / 2);
     }
 
+    .rocation_wrap figure{
+        display: flex;
+        justify-content: center;
+    }
+
     .rocation_ttl {
         color: #fff;
         font-size: 16px;
