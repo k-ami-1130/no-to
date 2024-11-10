@@ -368,6 +368,19 @@
         right: 12%;
     }
 
+    .top_mv_wrap{
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .top_img{
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .plan_items{
         display: -webkit-flex !important;
         display: flex !important;
@@ -434,7 +447,7 @@
     }
 
     .index_ttl::after {
-        content: url(../images/wave.svg);
+        content: url(../images/wave.png);
         position: absolute;
         display: contents;
         color: #FFBEAF;
@@ -448,7 +461,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 100%!important;
         height: 642px;
     }
 
@@ -956,22 +969,14 @@
         transform: rotate(-45deg);
     }
 
-    .plan_wrap{
+    .plan_wrap,
+    .location_plan_wrap{
         display: -webkit-flex !important;
         display: flex !important;
         -webkit-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
         -webkit-justify-content: center !important;
         justify-content: center !important;
-    }
-
-    .location_plan_wrap{
-        display: -webkit-flex !important;
-        display: flex !important;
-        -webkit-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
-        -webkit-justify-content: space-between !important;
-        justify-content: space-between !important;
     }
     
     .slider_wrap{
@@ -992,33 +997,38 @@
         margin-top: 10px;
     }
 
-    .plan_items{
-      a{
-        &:nth-of-type(2n+1){
-          transition-delay: 0.2s;
-        }
-        &:nth-of-type(2n){
-          transition-delay: 0.4s;
-        }
+    .plan_items__item {
+        opacity: 0;
+        transform: translate(0, 20%);
+        transition: opacity 1s, transform 1s;
+        width: calc(20% - 20px); /* 5列に分けるため、幅を調整（間隔も考慮） */
       }
-    }
-
-    .plan_items__item{
-      opacity: 0;
-      transition: 1.5s;
-      &.show {
-          opacity: 1;
+      
+      /* 各要素に表示タイミングをずらすための追加設定 */
+      .plan_items__item:nth-of-type(1) {
+        transition-delay: 0.2s;
       }
-    }
-    .plan_items__item{
-      transform: translate(0, 20%);
-      opacity: 0;
-      transition: 1s;
-      &.show {
-          transform: translate(0, 0);
-          opacity: 1;
+      
+      .plan_items__item:nth-of-type(2) {
+        transition-delay: 0.4s;
       }
-    }
+      
+      .plan_items__item:nth-of-type(3) {
+        transition-delay: 0.6s;
+      }
+      
+      .plan_items__item:nth-of-type(4) {
+        transition-delay: 0.8s;
+      }
+      
+      .plan_items__item:nth-of-type(5) {
+        transition-delay: 1s;
+      }
+      
+      .plan_items__item.show {
+        opacity: 1;
+        transform: translate(0, 0); /* 表示時にスムーズに移動 */
+      }
 
     /*写真が変わるアニメーション*/
 
