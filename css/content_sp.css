@@ -425,7 +425,7 @@
     }
 
     .index_ttl::after {
-        content: url(../images/wave.svg);
+        content: url(../images/wave.png);
         position: absolute;
         display: contents;
         color: #FFBEAF;
