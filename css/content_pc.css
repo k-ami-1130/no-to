@@ -136,6 +136,10 @@
         margin-left: 0 !important;
     }
 
+    .u-mB2{
+        margin-bottom: 20px;
+    }
+
     .u-mB5{
         margin-bottom: 50px;
     }
@@ -369,7 +373,7 @@
     }
 
     .top_bgimg.album_made__bgimg {
-        top: 120%;
+        top: 20%;
         right: 12%;
     }
 
