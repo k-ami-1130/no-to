@@ -399,6 +399,9 @@
         width: 18%;
         font-weight: bold;
         padding: 7px;
+    }
+
+    .plan_items .plan_items__img{
         filter: drop-shadow(3px 3px 4px #aaa);
     }
 
@@ -452,7 +455,7 @@
     }
 
     .index_ttl::after {
-        content: url(../images/wave.svg);
+        content: url(../images/wave_pc.svg);
         position: absolute;
         display: contents;
         color: #FFBEAF;
