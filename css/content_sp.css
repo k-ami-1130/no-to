@@ -531,12 +531,11 @@
         display: block;
     }
 
-    /* .area_tabBtn:hover,
-    .area_tabBtn:visited,
-    .area_tabBtn:active{
+    .area_tabBtn:active,
+    .area_tabBtn:focus{
         background-color: #41587A;
         color: #fff;
-    } */
+    }
 
     .area_tabBtn:nth-of-type(n+3) {
         margin-top: 10px;
