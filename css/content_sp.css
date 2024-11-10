@@ -334,6 +334,11 @@
         display: block;
     }
 
+    /* aタグデコレーション */
+    .u-underline{
+        text-decoration: underline!important;
+    }
+
     /* カスタマイズcss */
     .top_mv_wrap {
         position: relative;
@@ -425,7 +430,7 @@
     }
 
     .index_ttl::after {
-        content: url(../images/wave.png);
+        content: url(../images/wave_sp.svg);
         position: absolute;
         display: contents;
         color: #FFBEAF;
