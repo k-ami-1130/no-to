@@ -1022,7 +1022,7 @@
         opacity: 0;
         transform: translate(0, 20%);
         transition: opacity 1s, transform 1s;
-        width: calc(20% - 20px); /* 5列に分けるため、幅を調整（間隔も考慮） */
+        width: calc((100% - 20px) / 2); /* 5列に分けるため、幅を調整（間隔も考慮） */
       }
       
       /* 各要素に表示タイミングをずらすための追加設定 */
