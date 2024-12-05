@@ -931,6 +931,10 @@
         width: calc((100% - 10px) / 2);
     }
 
+    .type_of_albums__items:nth-of-type(n+3){
+        margin-top: 50px;
+    }
+    
     .photo_goods_creation__wrap{
         display: -webkit-flex !important;
         display: flex !important;
@@ -941,6 +945,7 @@
         width: 70%;
         margin: 50px auto 0;
     }
+
 
     .photo_goods_creation__items{
         width: calc((100% - 10px) / 2);
